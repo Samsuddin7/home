@@ -411,8 +411,8 @@
 
             /* HERO SECTION MOBILE FIXES */
             .hero {
-                min-height: 100vh;
-                padding: calc(var(--mobile-nav-height) + 1rem) 0 2rem;
+                min-height: auto;
+                padding: calc(var(--nav-height) + 2rem) 0 3rem; 
                 display: flex;
                 align-items: flex-start;
                 justify-content: center;
@@ -422,6 +422,7 @@
                 padding: 0 1rem;
                 width: 100%;
                 max-width: 100%;
+                gap: 3rem;
             }
 
             .hero-content {
@@ -457,7 +458,7 @@
             }
 
             .hero-description {
-                font-size: 1rem;
+                font-size: clamp(0.95rem, 4vw, 1.1rem);
                 line-height: 1.6;
                 margin-bottom: 2rem;
                 text-align: center;
@@ -466,7 +467,7 @@
                 display: block;
                 width: 100%;
                 padding: 0;
-                word-break: break-word;
+                word-wrap: break-word;
                 overflow-wrap: break-word;
                 white-space: normal;
             }
@@ -478,9 +479,9 @@
             }
 
             .btn {
-                padding: 1rem 1.5rem;
-                font-size: 0.95rem;
-                min-width: 140px;
+                padding: 1rem 2rem;
+/*                 font-size: 0.95rem; */
+                min-width: 280px;
             }
 
             .code-window {
@@ -542,7 +543,7 @@
             }
 
             .hero-title {
-                font-size: 1.6rem;
+                font-size: clamp(1.4rem, 10vw, 1.9rem);
             }
 
             .hero-subtitle {
@@ -599,10 +600,10 @@
                         <span class="typed-text"></span>
                         <span class="cursor">|</span>
                     </p>
-                    <p class="hero-description">
-                        🔥 Passionate Data Scientist in the making with strong skills in Python, SQL, and Machine Learning. 🔥
+                    <p class="hero-description reveal">
+                        Passionate Data Scientist in the making with strong skills in Python, SQL, and Machine Learning.
                         <br>
-                        ✨ Exploring patterns in data… still wondering how my code works, but excited when it does! 😅
+                        Exploring patterns in data… still wondering how my code works, but excited when it does!
                     </p>
                     <div class="hero-buttons">
                         <a href="#projects" class="btn btn-primary">View Projects</a>
